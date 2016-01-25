@@ -46,6 +46,10 @@ PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/rootdir/init.sony.usb.rc:root/init.sony.usb.rc \
     $(COMMON_PATH)/rootdir/ueventd.qcom.rc:root/ueventd.qcom.rc
 
+#TWRP
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/recovery/twrp.fstab:recovery/root/etc/twrp.fstab
+
 # Sbin
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/rootdir/sbin/tad_static:system/bin/tad_static
